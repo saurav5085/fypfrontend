@@ -18,7 +18,7 @@ import {
 
 // Constants
 const COLORS = ["#0e4b6b", "#f26625"];
-const BACKEND_URL = "http://13.49.154.188:5050" || "http://localhost:5050";
+const BACKEND_URL = process.env.REACT_APP_BACKEND_URL || "http://localhost:5050";
 
 const Dashboard = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
