@@ -34,7 +34,7 @@ const Dashboard = () => {
   const TOTAL_STUDENTS = 40;
 
   useEffect(() => {
-    const user = localStorage.getItem("user");
+    const user = localStorage.getItem("loggedInUser");
     if (!user) navigate("/login");
   }, [navigate]);
 
