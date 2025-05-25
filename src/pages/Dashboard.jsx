@@ -214,7 +214,7 @@ const Dashboard = () => {
         </h1>
         <button
           onClick={() => {
-            localStorage.removeItem("user");
+            localStorage.removeItem("loggedInUser");
             navigate("/login");
           }}
           className="bg-[#f26625] text-white font-bold px-5 py-2 rounded-lg hover:bg-orange-600 transition"
