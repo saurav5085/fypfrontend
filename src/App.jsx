@@ -2,7 +2,9 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Login";
 import Dashboard from "./pages/Dashboard";
 import { isLoggedIn } from "./auth";
-
+function ProtectedRoute({ children }) {
+  return isLoggedIn() ? children : <Navigate to="/login" />;
+}
 function App() {
   return (
     <Routes>
