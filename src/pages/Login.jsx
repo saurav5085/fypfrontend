@@ -10,7 +10,7 @@ function Login() {
 
   const handleLogin = () => {
     if (username === "admin" && password === "admin") {
-      localStorage.setItem("user", username);
+      localStorage.setItem("loggedInUser", username);
       navigate("/dashboard");
     } else {
       alert("Invalid credentials");
